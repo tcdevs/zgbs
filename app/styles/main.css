@@ -1,0 +1,762 @@
+/*!
+ *            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+ *                    Version 2, December 2004
+ *
+ * Copyright (C) 2015 Technische Centrale
+ *
+ * Everyone is permitted to copy and distribute verbatim or modified
+ * copies of this license document, and changing it is allowed as long
+ * as the name is changed.
+ *
+ *            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+ *   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+ *
+ *  0. You just DO WHAT THE FUCK YOU WANT TO.
+ */
+@import url(http://fonts.googleapis.com/css?family=Signika:400,600,700,300);
+/* 
+  The default Boostrap styles for our app 
+*/
+body {
+  margin: 12px;
+  font-family: 'Signika';
+  background: grey;
+}
+.container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.header,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.footer p {
+  font-size: 15px;
+}
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  /*padding-bottom: 10px;*/
+  margin-bottom: 16px;
+}
+/* Custom page footer */
+.footer {
+  margin-top: 19px;
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+.footer p {
+  font-size: 11px;
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+/* CUTOM STYLES */
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: #fff;
+  background-color: #0bacd3;
+  /* #3F889D; */
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+  outline: 0;
+  /*removes the dotted border*/
+}
+#tyresizeform {
+  margin-bottom: 18px;
+}
+/* LOADINGBAR STYLES */
+.progress span {
+  text-shadow: 0 0 4px #000;
+}
+/* CART STYLES */
+.cart-price {
+  font-size: 20px;
+  font-weight: 300;
+}
+.cart-price-bold {
+  font-size: 20px;
+  font-weight: 600;
+}
+/* Tyresize list styles */
+.tyresize-ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.tyresize-ul li {
+  display: inline;
+}
+/* item carousel */
+.item h1 {
+  font-size: 42px;
+  font-weight: 800;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.7);
+  color: whitesmoke;
+}
+.item p {
+  font-size: 20px;
+  font-weight: 300;
+  text-shadow: 1px 1px 2px #000;
+  color: whitesmoke;
+}
+.carousel-caption {
+  padding-bottom: 110px;
+}
+/* FAQ styles */
+.panel-body p {
+  font-size: 18px;
+  font-weight: 300;
+}
+/* gridlist TEST */
+.gridList-nav {
+  background: whitesmoke;
+  margin-bottom: 15px;
+  padding: 3px;
+  border: 1px solid rgba(221, 221, 221, 0.3);
+}
+/* bandenlabel styles */
+.band-label {
+  width: 213px;
+  height: 321px;
+  background: white;
+}
+/* Typeahed hover change */
+.typeahead .active > a,
+.typeahead .active > a:hover {
+  color: white;
+  /* Change the typeahead background color here if you'd like */
+  background-color: #0bacd3;
+  /* Turns off the default background gradients */
+  background-image: none;
+}
+/* 3D button styles for Bootstrap btns */
+.btn-hot {
+  color: #fff;
+  background-color: #db5566;
+  border-bottom: 2px solid #af4451;
+}
+.btn-hot:hover,
+.btn-sky.active:focus,
+.btn-hot:focus,
+.open > .dropdown-toggle.btn-hot {
+  color: #fff;
+  background-color: #df6a78;
+  border-bottom: 2px solid #b25560;
+  outline: none;
+}
+.btn-hot:active,
+.btn-hot.active {
+  color: #fff;
+  background-color: #c04b59;
+  border-top: 2px solid #9a3c47;
+  margin-top: 2px;
+}
+.btn-sunny {
+  color: #fff;
+  background-color: #f4ad49;
+  border-bottom: 2px solid #c38a3a;
+}
+.btn-sunny:hover,
+.btn-sky.active:focus,
+.btn-sunny:focus,
+.open > .dropdown-toggle.btn-sunny {
+  color: #fff;
+  background-color: #f5b75f;
+  border-bottom: 2px solid #c4924c;
+  outline: none;
+}
+.btn-sunny:active,
+.btn-sunny.active {
+  color: #fff;
+  background-color: #d69840;
+  border-top: 2px solid #ab7a33;
+  margin-top: 2px;
+}
+.btn-fresh {
+  color: #fff;
+  background-color: #51bf87;
+  border-bottom: 2px solid #41996c;
+}
+.btn-fresh:hover,
+.btn-sky.active:focus,
+.btn-fresh:focus,
+.open > .dropdown-toggle.btn-fresh {
+  color: #fff;
+  background-color: #66c796;
+  border-bottom: 2px solid #529f78;
+  outline: none;
+}
+.btn-fresh:active,
+.btn-fresh.active {
+  color: #fff;
+  background-color: #47a877;
+  border-top: 2px solid #39865f;
+  outline: none;
+  outline-offset: none;
+  margin-top: 2px;
+}
+.btn-sky {
+  color: #fff;
+  background-color: #0bacd3;
+  border-bottom: 2px solid #098aa9;
+}
+.btn-sky:hover,
+.btn-sky.active:focus,
+.btn-sky:focus,
+.open > .dropdown-toggle.btn-sky {
+  color: #fff;
+  background-color: #29b6d8;
+  border-bottom: 2px solid #2192ad;
+  outline: none;
+}
+.btn-sky:active,
+.btn-sky.active {
+  color: #fff;
+  background-color: #0a97b9;
+  border-top: 2px solid #087994;
+  outline-offset: none;
+  margin-top: 2px;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+  outline: none;
+  outline-offset: 0px;
+}
+/* SNACKBAR STYLES */
+.snackbar-container {
+  position: fixed;
+  left: 20px;
+  bottom: 0;
+  z-index: 99999;
+}
+.snackbar {
+  font-family: 'Signika';
+  overflow: hidden;
+  clear: both;
+  min-width: 288px;
+  max-width: 640px;
+  cursor: pointer;
+  background-color: #323232;
+  color: #FFFFFF;
+  font-size: 14px;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -moz-transition: -moz-transform 0.2s ease-in-out, opacity 0.2s ease-in, height 0 linear 0.2s, padding 0 linear 0.2s, height 0 linear 0.2s;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out, opacity 0.2s ease-in, height 0 linear 0.2s, padding 0 linear 0.2s, height 0 linear 0.2s;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in, height 0 linear 0.2s, padding 0 linear 0.2s, height 0 linear 0.2s;
+  -moz-transform: translateY(200%);
+  -webkit-transform: translateY(200%);
+  transform: translateY(200%);
+}
+.snackbar.snackbar-opened {
+  padding: 14px 15px;
+  margin-bottom: 16px;
+  height: auto;
+  -moz-transition: -moz-transform 0.2s ease-in-out, opacity 0.2s ease-in, height 0 linear 0.2s;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out, opacity 0.2s ease-in, height 0 linear 0.2s;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in, height 0 linear 0.2s, height 0 linear 0.2s;
+  -moz-transform: none;
+  -webkit-transform: none;
+  transform: none;
+}
+@media (max-width: 767px) {
+  .snackbar-container {
+    left: 0px !important;
+    right: 0px;
+    width: 100%;
+  }
+  .snackbar-container .snackbar {
+    min-width: 100%;
+  }
+  .snackbar-container [class="snackbar snackbar-opened"] ~ .snackbar.toast {
+    margin-top: 20px;
+  }
+  .snackbar-container [class="snackbar snackbar-opened"] {
+    border-radius: 0;
+    margin-bottom: 0;
+  }
+}
+.grid-form *,
+.grid-form *:before,
+.40grid-form *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.grid-form input[type="text"],
+.grid-form input[type="email"],
+.grid-form input[type="number"],
+.grid-form input[type="password"],
+.grid-form input[type="search"],
+.grid-form input[type="tel"],
+.grid-form input[type="url"],
+.grid-form input[type="color"],
+.grid-form input[type="date"],
+.grid-form input[type="datetime"],
+.grid-form input[type="datetime-local"],
+.grid-form input[type="month"],
+.grid-form input[type="time"],
+.grid-form input[type="week"],
+.grid-form textarea,
+.grid-form select {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.grid-form input[type="text"],
+.grid-form input[type="email"],
+.grid-form input[type="number"],
+.grid-form input[type="password"],
+.grid-form input[type="search"],
+.grid-form input[type="tel"],
+.grid-form input[type="url"],
+.grid-form input[type="color"],
+.grid-form input[type="date"],
+.grid-form input[type="datetime"],
+.grid-form input[type="datetime-local"],
+.grid-form input[type="month"],
+.grid-form input[type="time"],
+.grid-form input[type="week"],
+.grid-form textarea {
+  border: 0;
+  background: transparent;
+}
+.grid-form input[type="text"]::-webkit-input-placeholder,
+.grid-form input[type="email"]::-webkit-input-placeholder,
+.grid-form input[type="number"]::-webkit-input-placeholder,
+.grid-form input[type="password"]::-webkit-input-placeholder,
+.grid-form input[type="search"]::-webkit-input-placeholder,
+.grid-form input[type="tel"]::-webkit-input-placeholder,
+.grid-form input[type="url"]::-webkit-input-placeholder,
+.grid-form input[type="color"]::-webkit-input-placeholder,
+.grid-form input[type="date"]::-webkit-input-placeholder,
+.grid-form input[type="datetime"]::-webkit-input-placeholder,
+.grid-form input[type="datetime-local"]::-webkit-input-placeholder,
+.grid-form input[type="month"]::-webkit-input-placeholder,
+.grid-form input[type="time"]::-webkit-input-placeholder,
+.grid-form input[type="week"]::-webkit-input-placeholder,
+.grid-form textarea::-webkit-input-placeholder {
+  font-weight: 100;
+  color: #595959;
+}
+.grid-form input[type="text"]:-moz-placeholder,
+.grid-form input[type="email"]:-moz-placeholder,
+.grid-form input[type="number"]:-moz-placeholder,
+.grid-form input[type="password"]:-moz-placeholder,
+.grid-form input[type="search"]:-moz-placeholder,
+.grid-form input[type="tel"]:-moz-placeholder,
+.grid-form input[type="url"]:-moz-placeholder,
+.grid-form input[type="color"]:-moz-placeholder,
+.grid-form input[type="date"]:-moz-placeholder,
+.grid-form input[type="datetime"]:-moz-placeholder,
+.grid-form input[type="datetime-local"]:-moz-placeholder,
+.grid-form input[type="month"]:-moz-placeholder,
+.grid-form input[type="time"]:-moz-placeholder,
+.grid-form input[type="week"]:-moz-placeholder,
+.grid-form textarea:-moz-placeholder {
+  font-weight: 100;
+  color: #595959;
+}
+.grid-form input[type="text"]:focus,
+.grid-form input[type="email"]:focus,
+.grid-form input[type="number"]:focus,
+.grid-form input[type="password"]:focus,
+.grid-form input[type="search"]:focus,
+.grid-form input[type="tel"]:focus,
+.grid-form input[type="url"]:focus,
+.grid-form input[type="color"]:focus,
+.grid-form input[type="date"]:focus,
+.grid-form input[type="datetime"]:focus,
+.grid-form input[type="datetime-local"]:focus,
+.grid-form input[type="month"]:focus,
+.grid-form input[type="time"]:focus,
+.grid-form input[type="week"]:focus,
+.grid-form textarea:focus {
+  outline: none;
+}
+.grid-form fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.grid-form fieldset legend {
+  border: none;
+  border-bottom: 4px solid #e5e5e5;
+  color: #404040;
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 5px;
+  position: static;
+  width: 100%;
+}
+.grid-form fieldset fieldset legend {
+  border-bottom: 2px solid #e5e5e5;
+  font-weight: normal;
+}
+.grid-form fieldset fieldset fieldset legend {
+  border-bottom: 1px solid #e5e5e5;
+  font-weight: normal;
+  font-size: 15px;
+}
+.grid-form [data-row-span] {
+  border-bottom: 1px solid #e5e5e5;
+  width: 100%;
+  zoom: 1;
+}
+.grid-form [data-row-span]:before,
+.grid-form [data-row-span]:after {
+  content: "";
+  display: table;
+}
+.grid-form [data-row-span]:after {
+  clear: both;
+}
+@media only screen and (min-width: 0) and (max-width: 700px) {
+  .grid-form [data-row-span] {
+    border-bottom: none;
+  }
+}
+.grid-form [data-row-span] [data-field-span] {
+  padding: 8px;
+  float: left;
+}
+@media only screen and (min-width: 0) and (max-width: 700px) {
+  .grid-form [data-row-span] [data-field-span] {
+    border-bottom: 1px solid #e5e5e5;
+    width: 100% !important;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .grid-form [data-row-span] [data-field-span] {
+    border-right: 1px solid #e5e5e5;
+    display: block;
+  }
+}
+.grid-form [data-row-span] [data-field-span] label:first-child {
+  margin-top: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 10px;
+  color: #333333;
+  display: block;
+  margin-bottom: 4px;
+}
+.grid-form [data-row-span] [data-field-span] label:first-child:hover {
+  cursor: text;
+}
+.grid-form [data-row-span] [data-field-span]:last-child {
+  border-right: none;
+}
+.grid-form [data-row-span] [data-field-span].focus {
+  background: #fffad4;
+}
+.grid-form [data-row-span] [data-field-span].focus label {
+  color: #262626;
+}
+.grid-form [data-row-span] [data-field-span]:hover {
+  background: #fffded;
+  cursor: text;
+}
+.grid-form [data-row-span="1"] > [data-field-span="1"] {
+  width: 100%;
+}
+.grid-form [data-row-span="2"] > [data-field-span="1"] {
+  width: 50%;
+}
+.grid-form [data-row-span="2"] > [data-field-span="2"] {
+  width: 100%;
+}
+.grid-form [data-row-span="3"] > [data-field-span="1"] {
+  width: 33.33333%;
+}
+.grid-form [data-row-span="3"] > [data-field-span="2"] {
+  width: 66.66667%;
+}
+.grid-form [data-row-span="3"] > [data-field-span="3"] {
+  width: 100%;
+}
+.grid-form [data-row-span="4"] > [data-field-span="1"] {
+  width: 25%;
+}
+.grid-form [data-row-span="4"] > [data-field-span="2"] {
+  width: 50%;
+}
+.grid-form [data-row-span="4"] > [data-field-span="3"] {
+  width: 75%;
+}
+.grid-form [data-row-span="4"] > [data-field-span="4"] {
+  width: 100%;
+}
+.grid-form [data-row-span="5"] > [data-field-span="1"] {
+  width: 20%;
+}
+.grid-form [data-row-span="5"] > [data-field-span="2"] {
+  width: 40%;
+}
+.grid-form [data-row-span="5"] > [data-field-span="3"] {
+  width: 60%;
+}
+.grid-form [data-row-span="5"] > [data-field-span="4"] {
+  width: 80%;
+}
+.grid-form [data-row-span="5"] > [data-field-span="5"] {
+  width: 100%;
+}
+.grid-form [data-row-span="6"] > [data-field-span="1"] {
+  width: 16.66667%;
+}
+.grid-form [data-row-span="6"] > [data-field-span="2"] {
+  width: 33.33333%;
+}
+.grid-form [data-row-span="6"] > [data-field-span="3"] {
+  width: 50%;
+}
+.grid-form [data-row-span="6"] > [data-field-span="4"] {
+  width: 66.66667%;
+}
+.grid-form [data-row-span="6"] > [data-field-span="5"] {
+  width: 83.33333%;
+}
+.grid-form [data-row-span="6"] > [data-field-span="6"] {
+  width: 100%;
+}
+.grid-form [data-row-span="7"] > [data-field-span="1"] {
+  width: 14.28571%;
+}
+.grid-form [data-row-span="7"] > [data-field-span="2"] {
+  width: 28.57143%;
+}
+.grid-form [data-row-span="7"] > [data-field-span="3"] {
+  width: 42.85714%;
+}
+.grid-form [data-row-span="7"] > [data-field-span="4"] {
+  width: 57.14286%;
+}
+.grid-form [data-row-span="7"] > [data-field-span="5"] {
+  width: 71.42857%;
+}
+.grid-form [data-row-span="7"] > [data-field-span="6"] {
+  width: 85.71429%;
+}
+.grid-form [data-row-span="7"] > [data-field-span="7"] {
+  width: 100%;
+}
+.grid-form [data-row-span="8"] > [data-field-span="1"] {
+  width: 12.5%;
+}
+.grid-form [data-row-span="8"] > [data-field-span="2"] {
+  width: 25%;
+}
+.grid-form [data-row-span="8"] > [data-field-span="3"] {
+  width: 37.5%;
+}
+.grid-form [data-row-span="8"] > [data-field-span="4"] {
+  width: 50%;
+}
+.grid-form [data-row-span="8"] > [data-field-span="5"] {
+  width: 62.5%;
+}
+.grid-form [data-row-span="8"] > [data-field-span="6"] {
+  width: 75%;
+}
+.grid-form [data-row-span="8"] > [data-field-span="7"] {
+  width: 87.5%;
+}
+.grid-form [data-row-span="8"] > [data-field-span="8"] {
+  width: 100%;
+}
+.grid-form [data-row-span="9"] > [data-field-span="1"] {
+  width: 11.11111%;
+}
+.grid-form [data-row-span="9"] > [data-field-span="2"] {
+  width: 22.22222%;
+}
+.grid-form [data-row-span="9"] > [data-field-span="3"] {
+  width: 33.33333%;
+}
+.grid-form [data-row-span="9"] > [data-field-span="4"] {
+  width: 44.44444%;
+}
+.grid-form [data-row-span="9"] > [data-field-span="5"] {
+  width: 55.55556%;
+}
+.grid-form [data-row-span="9"] > [data-field-span="6"] {
+  width: 66.66667%;
+}
+.grid-form [data-row-span="9"] > [data-field-span="7"] {
+  width: 77.77778%;
+}
+.grid-form [data-row-span="9"] > [data-field-span="8"] {
+  width: 88.88889%;
+}
+.grid-form [data-row-span="9"] > [data-field-span="9"] {
+  width: 100%;
+}
+.grid-form [data-row-span="10"] > [data-field-span="1"] {
+  width: 10%;
+}
+.grid-form [data-row-span="10"] > [data-field-span="2"] {
+  width: 20%;
+}
+.grid-form [data-row-span="10"] > [data-field-span="3"] {
+  width: 30%;
+}
+.grid-form [data-row-span="10"] > [data-field-span="4"] {
+  width: 40%;
+}
+.grid-form [data-row-span="10"] > [data-field-span="5"] {
+  width: 50%;
+}
+.grid-form [data-row-span="10"] > [data-field-span="6"] {
+  width: 60%;
+}
+.grid-form [data-row-span="10"] > [data-field-span="7"] {
+  width: 70%;
+}
+.grid-form [data-row-span="10"] > [data-field-span="8"] {
+  width: 80%;
+}
+.grid-form [data-row-span="10"] > [data-field-span="9"] {
+  width: 90%;
+}
+.grid-form [data-row-span="10"] > [data-field-span="10"] {
+  width: 100%;
+}
+.grid-form [data-row-span="11"] > [data-field-span="1"] {
+  width: 9.09091%;
+}
+.grid-form [data-row-span="11"] > [data-field-span="2"] {
+  width: 18.18182%;
+}
+.grid-form [data-row-span="11"] > [data-field-span="3"] {
+  width: 27.27273%;
+}
+.grid-form [data-row-span="11"] > [data-field-span="4"] {
+  width: 36.36364%;
+}
+.grid-form [data-row-span="11"] > [data-field-span="5"] {
+  width: 45.45455%;
+}
+.grid-form [data-row-span="11"] > [data-field-span="6"] {
+  width: 54.54545%;
+}
+.grid-form [data-row-span="11"] > [data-field-span="7"] {
+  width: 63.63636%;
+}
+.grid-form [data-row-span="11"] > [data-field-span="8"] {
+  width: 72.72727%;
+}
+.grid-form [data-row-span="11"] > [data-field-span="9"] {
+  width: 81.81818%;
+}
+.grid-form [data-row-span="11"] > [data-field-span="10"] {
+  width: 90.90909%;
+}
+.grid-form [data-row-span="11"] > [data-field-span="11"] {
+  width: 100%;
+}
+.grid-form [data-row-span="12"] > [data-field-span="1"] {
+  width: 8.33333%;
+}
+.grid-form [data-row-span="12"] > [data-field-span="2"] {
+  width: 16.66667%;
+}
+.grid-form [data-row-span="12"] > [data-field-span="3"] {
+  width: 25%;
+}
+.grid-form [data-row-span="12"] > [data-field-span="4"] {
+  width: 33.33333%;
+}
+.grid-form [data-row-span="12"] > [data-field-span="5"] {
+  width: 41.66667%;
+}
+.grid-form [data-row-span="12"] > [data-field-span="6"] {
+  width: 50%;
+}
+.grid-form [data-row-span="12"] > [data-field-span="7"] {
+  width: 58.33333%;
+}
+.grid-form [data-row-span="12"] > [data-field-span="8"] {
+  width: 66.66667%;
+}
+.grid-form [data-row-span="12"] > [data-field-span="9"] {
+  width: 75%;
+}
+.grid-form [data-row-span="12"] > [data-field-span="10"] {
+  width: 83.33333%;
+}
+.grid-form [data-row-span="12"] > [data-field-span="11"] {
+  width: 91.66667%;
+}
+.grid-form [data-row-span="12"] > [data-field-span="12"] {
+  width: 100%;
+}
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 16px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+  .carousel-caption {
+    padding-bottom: 40px;
+  }
+  .item h1 {
+    font-size: 32px;
+  }
+  .item p {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    width: 952px;
+  }
+  .carousel-caption {
+    padding-bottom: 60px;
+  }
+  .item h1 {
+    font-size: 36px;
+  }
+  .item p {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+  .carousel-caption {
+    padding-bottom: 110px;
+  }
+  .item h1 {
+    font-size: 42px;
+  }
+  .item p {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,53 @@
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+
+  .container{
+    width: 100%;
+  }
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 16px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+
+  .carousel-caption {
+    padding-bottom: 40px;
+  }
+
+  .item h1{font-size: 32px;}
+  .item p{font-size: 14px;}
+}
+
+@media screen and (min-width: 992px) {
+  .container{
+    width: 952px;
+  }
+  .carousel-caption {
+    padding-bottom: 60px;
+  }
+
+  .item h1{font-size: 36px;}
+  .item p{font-size: 16px;}
+}
+
+@media screen and (min-width: 1200px) {
+  .container{
+    width: 1170px;
+  }
+  .carousel-caption {
+    padding-bottom: 110px;
+  }
+
+  .item h1{font-size: 42px;}
+  .item p{font-size: 20px;}
+}
