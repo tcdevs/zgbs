@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="nl">
+<html lang="nl" ng-app="myApp">
 <head>
     <meta charset="utf-8">
-    <title>ZGBS</title>
+    <title>ZGBS 11</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
@@ -13,37 +13,25 @@
     <!-- endbower -->
     <!-- endbuild -->
 
-    <!-- build:css1 css/main.css -->
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
 
 </head>
-<body>
+<body ng-controller="MyCtrl">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <h1>ZGBS</h1>
+    <h1>ZGBS test it out!</h1>
     <hr>
+    <p>{{title}}</p>
 
-  
-
-
-    <!-- build:js0 js/vendor.js -->
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/angular/angular.min.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
-    <script src="bower_components/angular-cookies/angular-cookies.min.js"></script>
-    <script src="bower_components/angular-loader/angular-loader.min.js"></script>
-    <script src="bower_components/angular-route/angular-route.min.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
-    <script src="bower_components/angular-touch/angular-touch.min.js"></script>
+    <!-- build:js js/vendor.js -->
+    <script src="bower_components/angular/angular.js"></script>
     <!-- endbuild -->
 
-    <!-- build:js1 js/scripts.js -->
-    <script src="scripts/go.js"></script>
+    <!-- build:js js/scripts.js -->
     <script src="scripts/app.js"></script>
     <!-- endbuild -->
-
- 
 </body>
 </html>
