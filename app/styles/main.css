@@ -25,13 +25,14 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 @import url(http://fonts.googleapis.com/css?family=Signika:400,600,700,300);
+/*! THIS IS A TEST */
 /* 
   The default Boostrap styles for our app 
 */
 body {
   margin: 12px;
   font-family: 'Signika';
-  background: grey;
+  background: whitesmoke;
 }
 .container {
   padding-right: 0;
